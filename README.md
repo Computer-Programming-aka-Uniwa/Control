@@ -41,9 +41,9 @@ This project contains a detailed exploration of C programming fundamentals, incl
 
 - **Source Codes and Detailed Documentation**:
   - **Topic 3**: Solving Quadratic Equations (`2ndGradeEquation.c`)
-    - Program and Documentation (Pages 7-21)
+    - Program and Documentation
   - **Topic 4**: Finding Maximum Integer (`MaxInteger.c`)
-    - Program and Documentation (Pages 22-35)
+    - Program and Documentation
 
 ---
 
