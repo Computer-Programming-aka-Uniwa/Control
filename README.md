@@ -16,10 +16,10 @@ For the detailed Documentation, click the link:
 This project contains a detailed exploration of C programming fundamentals, including theoretical explanations and practical examples. The documentation covers key control structures like `if` and `switch`, along with the implementation of complex mathematical programs such as solving quadratic equations and finding the maximum integer from a set of inputs. The source code files and documentation are provided for educational purposes.
 
 ## Course Information
-- **Course**: Computer Programming
+- **Course**: [Computer Programming](https://ice.uniwa.gr/education/undergraduate/courses/computer-programming/
 - **Semester**: 1
 - **Program**: [UNIWA](https://www.uniwa.gr/)
-- **Department**: [Information and Computer Engineering](https://ice.uniwa.gr/)
+- **Department**: [Informatics and Computer Engineering](https://ice.uniwa.gr/)
 - **Instructor**: [Georgios Meletiou](https://ice.uniwa.gr/emd_person/17562/)
 
 ## Student Information
