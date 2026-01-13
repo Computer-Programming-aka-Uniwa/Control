@@ -60,14 +60,17 @@ These structures are essential for directing program flow based on logical condi
 | Section | Folder / File | Description |
 |------:|---------------|-------------|
 | 1 | `assign/` | Assignment material |
-| 1.1 | `assign/project2.png` | Assignment description / problem statement (English) |
-| 1.2 | `assign/εργασία2.png` | Assignment description / problem statement (Greek) |
+| 1.1 | `assign/project3.png` | Assignment description / problem statement (English) |
+| 1.2 | `assign/εργασία3.png` | Assignment description / problem statement (Greek) |
 | 2 | `docs/` | Theoretical documentation |
-| 2.1 | `docs/Basic-Elements.pdf` | Basic programming elements and concepts (English) |
-| 2.2 | `docs/Βασικά-Στοιχεία.pdf` | Basic programming elements and concepts (Greek) |
+| 2.1 | `docs/Control-Structures.pdf` | Control structures in C (English) |
+| 2.2 | `docs/Δομές-Ελέγχου.pdf` | Control structures in C (Greek) |
 | 3 | `src/` | Source code implementations |
-| 3.1 | `src/CubeSphere.c` | Geometric computation: cube–sphere problem |
-| 3.2 | `src/MathsIntegers.c` | Integer arithmetic and mathematical operations |
+| 3.1 | `src/if.c` | Basic conditional statement (`if`) |
+| 3.2 | `src/if1.c` | Extended conditional logic |
+| 3.3 | `src/switch.c` | Multi-branch selection (`switch`) |
+| 3.4 | `src/MaxInteger.c` | Maximum value selection using conditionals |
+| 3.5 | `src/2ndGradeEquation.c` | Solving a second-degree equation using control logic |
 | 4 | `README.md` | Repository overview and instructions |
 
 ---
@@ -163,8 +166,8 @@ $$
 
 # Installation & Setup Guide
 
-This repository contains **introductory C programming material** developed for the  
-**Computer Programming** course at **University of West Attica (UNIWA)**.
+This repository contains **introductory laboratory material** for the  
+**Computer Programming** course at the **University of West Attica (UNIWA)**.
 
 ---
 
@@ -197,7 +200,7 @@ This repository contains **introductory C programming material** developed for t
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/Computer-Programming-aka-Uniwa/Basic.git
+git clone https://github.com/Computer-Programming-aka-Uniwa/Control.git
 ```
 
 #### Alternative (Without Git)
@@ -209,32 +212,35 @@ git clone https://github.com/Computer-Programming-aka-Uniwa/Basic.git
 ## Compiling & Running the Programs
 ### 2. Navigate to Source Directory
 ```bash
-cd Basic/src
+cd Control/src
 ```
 
 ### 3. Compile the Programs
-Using GCC and adding the flag `-lm` for the `math.h` library to link:
 ```bash
-gcc MathsIntegers.c -o MathsIntegers -lm
+gcc if.c -o if
+gcc if1.c -o if1
+gcc switch.c -o switch
+gcc MaxInteger.c -o MaxInteger
+gcc 2ndGradeEquation.c -o 2ndGradeEquation -lm
 ```
-```bash
-gcc CubeSphere.c -o CubeSphere
-```
+> `-lm` is required to link the math library
 
 ### 4. Run the Programs
-Linux / macOS:
+Linux / macOS
 ```bash
-./MathsIntegers
+./if
+./if1
+./switch
+./MaxInteger
+./2ndGradeEquation
 ```
+Windows
 ```bash
-./CubeSphere
-```
-Windows:
-```bash
-MathsIntegers.exe
-```
-```bash
-CubeSphere.exe
+if.exe
+if1.exe
+switch.exe
+MaxInteger.exe
+2ndGradeEquation.exe
 ```
 
 ---
