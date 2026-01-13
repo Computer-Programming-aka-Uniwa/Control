@@ -1,265 +1,246 @@
-![Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/255px-Flag_of_the_United_Kingdom_%281-2%29.svg.png)
+<p align="center">
+  <img src="https://www.especial.gr/wp-content/uploads/2019/03/panepisthmio-dut-attikhs.png" alt="UNIWA" width="150"/>
+</p>
 
-# Control Structures in C
+<p align="center">
+  <strong>UNIVERSITY OF WEST ATTICA</strong><br>
+  SCHOOL OF ENGINEERING<br>
+  DEPARTMENT OF COMPUTER ENGINEERING AND INFORMATICS
+</p>
 
-For the requested Assignment, click the link:
-[Assignment](Assignment/)
+---
 
-For the Source Code, click the link:
-[Code](Code/)
+<p align="center">
+  <strong>Computer Programming</strong>
+</p>
 
-For the detailed Documentation, click the link:
-[Documentation](Documentation/)
+<h1 align="center">
+  Control Structures
+</h1>
 
-## Overview
+<p align="center">
+  <strong>Vasileios Evangelos Athanasiou</strong><br>
+  Student ID: 19390005
+</p>
 
-This project contains a detailed exploration of C programming fundamentals, including theoretical explanations and practical examples. The documentation covers key control structures like `if` and `switch`, along with the implementation of complex mathematical programs such as solving quadratic equations and finding the maximum integer from a set of inputs. The source code files and documentation are provided for educational purposes.
+<p align="center">
+  <a href="https://github.com/Ath21" target="_blank">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/vasilis-athanasiou-7036b53a4/" target="_blank">LinkedIn</a>
+</p>
 
-## Course Information
-- **Course**: [Computer Programming](https://ice.uniwa.gr/education/undergraduate/courses/computer-programming/
-- **Semester**: 1
-- **Program**: [UNIWA](https://www.uniwa.gr/)
-- **Department**: [Informatics and Computer Engineering](https://ice.uniwa.gr/)
-- **Instructor**: [Georgios Meletiou](https://ice.uniwa.gr/emd_person/17562/)
+<p align="center">
+  Supervisor: Georgios Meletiou, Laboratory Teaching Staff<br>
+</p>
 
-## Student Information
-- **Name**: Athanasiou Vasileios Evangelos
-- **Student ID**: ice19390005
-- **Status**: Undergraduate
+<p align="center">
+  <a href="https://ice.uniwa.gr/en/emd_person/georgios-meletiou/" target="_blank">UNIWA Profile</a>
+</p>
+
+<p align="center">
+  Athens, November 2021
+</p>
+
+---
+
+# Project Overview
+
+The primary focus of this laboratory work is the **theoretical understanding and practical application of control structures in C**, specifically:
+- `if`
+- `if-else`
+- `switch`
+
+These structures are essential for directing program flow based on logical conditions and user input.
+
+
+---
+
+## Table of Contents
+
+
+| Section | Folder / File | Description |
+|------:|---------------|-------------|
+| 1 | `assign/` | Assignment material |
+| 1.1 | `assign/project2.png` | Assignment description / problem statement (English) |
+| 1.2 | `assign/εργασία2.png` | Assignment description / problem statement (Greek) |
+| 2 | `docs/` | Theoretical documentation |
+| 2.1 | `docs/Basic-Elements.pdf` | Basic programming elements and concepts (English) |
+| 2.2 | `docs/Βασικά-Στοιχεία.pdf` | Basic programming elements and concepts (Greek) |
+| 3 | `src/` | Source code implementations |
+| 3.1 | `src/CubeSphere.c` | Geometric computation: cube–sphere problem |
+| 3.2 | `src/MathsIntegers.c` | Integer arithmetic and mathematical operations |
+| 4 | `README.md` | Repository overview and instructions |
+
+---
+
 
 ## Contents
 
-- **Theory Topics**:
-  - **Topic 1a: The `if` Command** 
-  - **Topic 1b: The `switch` Command** 
+## 1. Theory Fundamentals
 
-- **Source Code Issues**:
-  - **Topic 2**: Documentation and analysis of the provided source codes.
-    - Documentation for `if.c` 
-    - Documentation for `if1.c` 
-    - Documentation for `switch.c` 
+The documentation explores the **logic and syntax of conditional execution** in C.
 
-- **Source Codes and Detailed Documentation**:
-  - **Topic 3**: Solving Quadratic Equations (`2ndGradeEquation.c`)
-    - Program and Documentation
-  - **Topic 4**: Finding Maximum Integer (`MaxInteger.c`)
-    - Program and Documentation
+### if and if-else Statements
+- Detailed explanation of how expressions (arithmetic, relational, or logical) are evaluated as:
+  - **True** (non-zero)
+  - **False** (zero)
+- Demonstrates how evaluation results determine the execution path of a program.
 
----
+### Nested Conditions
+- Examples of placing `if` statements inside other `if-else` structures.
+- Used to handle more complex decision-making scenarios, such as:
+  - Determining whether a number is **negative**, **positive**, or **zero**.
 
-## Theory Topics
-
-### Topic 1a: What do you know about the `if` command?
-
-The `if` statement is a control structure in C used to execute a block of code if a specified condition evaluates to true. It allows for decision-making in the flow of a program.
-
-### Topic 1b: What do you know about the `switch` command?
-
-The `switch` statement is another control structure in C, used to execute one of many code blocks based on the value of a variable. Unlike `if`, it is used for handling multiple cases more efficiently, especially when there are numerous possible values for a single variable.
+### switch Statement
+- Analysis of integer-based decision-making using:
+  - `case`
+  - `default`
+- Emphasizes the critical role of the `break` statement in preventing unwanted fall-through behavior.
 
 ---
 
-## Source Code Issues
+## 2. Source Code & Documentation
 
-### Topic 2: Marking and Documentation
+The project includes fully documented source code for the following programs:
 
-This section addresses issues found in the following source code files:
-- **`if.c`**: Documentation focuses on the structure and flow of `if` statements.
-- **`if1.c`**: Extended analysis of nested `if` conditions.
-- **`switch.c`**: Details the use of the `switch` statement with different cases and fall-through behavior.
+- **`if.c` & `if1.c`**
+  - Programs designed to find the **maximum of three integers**.
+  - Implemented using:
+    - Nested `if-else` blocks
+    - The ternary operator (`?:`)
 
----
+- **`switch.c`**
+  - Demonstrates how the `switch` statement operates on integer variables.
+  - Shows how execution flows through cases unless explicitly stopped using `break`.
 
-## Source Codes / Documentation
+- **`2ndGradeEquation.c`**
+  - A comprehensive program that solves **quadratic equations** of the form:
 
-### Topic 3: Solving Quadratic Equations (`2ndGradeEquation.c`)
+$$
+ax^2 + bx + c = 0
+$$
 
-This section provides detailed documentation and explanation of the quadratic equation-solving program:
-- **Program**: A C program that solves quadratic equations of the form `ax² + bx + c = 0`.
-- **Documentation**:
-  - **Required**: Description of what is needed for the program.
-  - **Structure**: How the program is organized.
-  - **Variables**: Definitions and roles of the variables used.
-  - **Traversal**: Step-by-step explanation of the algorithm.
-  - **Examples**: Sample input/output examples to demonstrate usage.
-  - **Remarks**: Additional comments on the program’s behavior and edge cases.
-
-### Topic 4: Finding Maximum Integer (`MaxInteger.c`)
-
-This section provides detailed documentation and explanation of the maximum integer finding program:
-- **Program**: A C program that reads a list of integers and finds the maximum value.
-- **Documentation**:
-  - **Required**: Explanation of the program's purpose.
-  - **Structure**: Breakdown of how the program works.
-  - **Variables**: Explanation of the variables used in the program.
-  - **Traversal**: Walkthrough of the program’s flow.
-  - **Examples**: Sample cases demonstrating the input and output of the program.
-  - **Remarks**: Additional observations and clarifications on edge cases or special scenarios.
 
 ---
 
-## Requirements
+## Detailed Feature: Quadratic Equation Solver
 
-- **C Compiler**: GCC or any standard C compiler.
-- **Operating System**: Linux/Windows/MacOS.
-- **Development Environment**: Command line or IDE.
+The program **`2ndGradeEquation.c`** performs the following technical functions:
+
+### Input Handling
+- Reads three `double` coefficients (`a`, `b`, `c`) from standard input.
+
+### Mathematical Analysis
+- Calculates the **discriminant**:
+  
+$$
+D = b^2 - 4ac
+$$
+
+
+- Determines whether the equation is:
+  - **Quadratic** (`a ≠ 0`)
+  - **Linear / Degenerate** (`a = 0`)
+
+### Root Calculation
+- **D > 0**  
+  - Calculates **two distinct real roots**.
+
+- **D = 0**  
+  - Calculates **one real (double) root**.
+
+- **D < 0**  
+  - Identifies the equation as **impossible in the set of real numbers**.
+
+### Output
+- Formats and prints:
+  - Input coefficients
+  - Calculated roots
+- Uses **high numerical precision** for clarity and correctness.
+
+
 
 ---
 
-## Installation and Usage
+# Installation & Setup Guide
+
+This repository contains **introductory C programming material** developed for the  
+**Computer Programming** course at **University of West Attica (UNIWA)**.
+
+---
+
+## Prerequisites
+
+### Required Software
+
+- **C Compiler**
+  - Recommended:
+    - **GCC** (Linux / macOS / Windows via MinGW or WSL)
+
+- **Text Editor or IDE**
+  - Visual Studio Code `(Recommended)`
+  - Code::Blocks
+  - Dev-C++
+  - CLion
+  - Any plain text editor
+
+### Supported Operating Systems
+- Windows
+- Linux `(Recommended)`
+- macOS
+
+---
+
+## Installation
 
 ### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
 ```bash
-git clone https://github.com/Computer-Programming-aka-Uniwa/Control
-cd Control
-```
-### 2. Compile
-```bash
-gcc -o if if.c
-gcc -o if1 if1.c
-gcc -o switch switch.c
-gcc -o MathsIntegers MathsIntegers.c
-gcc -o CubeSphere CubeSphere.c
+git clone https://github.com/Computer-Programming-aka-Uniwa/Basic.git
 ```
 
-### 3. Run
+#### Alternative (Without Git)
+
+- Open the repository URL in your browser
+- Click Code → Download ZIP
+- Extract the ZIP file to a local directory
+
+## Compiling & Running the Programs
+### 2. Navigate to Source Directory
 ```bash
-./if
-./if1
-./switch
+cd Basic/src
+```
+
+### 3. Compile the Programs
+Using GCC and adding the flag `-lm` for the `math.h` library to link:
+```bash
+gcc MathsIntegers.c -o MathsIntegers -lm
+```
+```bash
+gcc CubeSphere.c -o CubeSphere
+```
+
+### 4. Run the Programs
+Linux / macOS:
+```bash
 ./MathsIntegers
+```
+```bash
 ./CubeSphere
 ```
-
-![Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/255px-Flag_of_Greece.svg.png)
-
-# Δομές Ελέγχου στη Γλώσσα C
-
-Για την ανάθεση, κάντε κλικ στον σύνδεσμο:  
-[Assignment](Assignment/)
-
-Για τον πηγαίο κώδικα, κάντε κλικ στον σύνδεσμο:  
-[Code](Code/)
-
-Για την αναλυτική τεκμηρίωση, κάντε κλικ στον σύνδεσμο:  
-[Documentation](Documentation/)
-
-## Επισκόπηση
-
-Αυτό το έργο περιέχει μια λεπτομερή εξερεύνηση των θεμελιωδών εννοιών του προγραμματισμού στη γλώσσα C, συμπεριλαμβανομένων θεωρητικών εξηγήσεων και πρακτικών παραδειγμάτων. Η τεκμηρίωση καλύπτει βασικές δομές ελέγχου, όπως οι εντολές `if` και `switch`, καθώς και την υλοποίηση πολύπλοκων μαθηματικών προγραμμάτων, όπως η επίλυση δευτεροβάθμιων εξισώσεων και η εύρεση του μέγιστου ακέραιου από ένα σύνολο δεδομένων. Τα αρχεία κώδικα και η τεκμηρίωση παρέχονται για εκπαιδευτικούς σκοπούς.
-
-## Πληροφορίες Μαθήματος
-- **Μάθημα**: Προγραμματισμός Υπολογιστών
-- **Εξάμηνο**: 1
-- **Πρόγραμμα**: [ΠΑΔΑ](https://www.uniwa.gr/)
-- **Τμήμα**: [Μηχανικών Πληροφορικής και Υπολογιστών](https://ice.uniwa.gr/)
-- **Διδάσκων**: [Γεώργιος Μελετίου](https://ice.uniwa.gr/emd_person/17562/)
-
-## Πληροφορίες Φοιτητή
-- **Όνομα**: Αθανασίου Βασίλειος Ευάγγελος
-- **Αριθμός Μητρώου**: ice19390005
-- **Κατάσταση**: Προπτυχιακός Φοιτητής
-
-## Περιεχόμενα
-
-- **Θεωρητικά Θέματα**:
-  - **Θέμα 1α: Η εντολή `if`**
-  - **Θέμα 1β: Η εντολή `switch`**
-
-- **Θέματα Πηγαίου Κώδικα**:
-  - **Θέμα 2**: Τεκμηρίωση και ανάλυση των παρεχόμενων κωδικών.
-    - Τεκμηρίωση για το `if.c`
-    - Τεκμηρίωση για το `if1.c`
-    - Τεκμηρίωση για το `switch.c`
-
-- **Προγράμματα και Αναλυτική Τεκμηρίωση**:
-  - **Θέμα 3**: Επίλυση Δευτεροβάθμιων Εξισώσεων (`2ndGradeEquation.c`)
-    - Πρόγραμμα και Τεκμηρίωση
-  - **Θέμα 4**: Εύρεση Μέγιστου Ακέραιου (`MaxInteger.c`)
-    - Πρόγραμμα και Τεκμηρίωση
-
----
-
-## Θεωρητικά Θέματα
-
-### Θέμα 1α: Τι γνωρίζετε για την εντολή `if`;
-
-Η εντολή `if` είναι μια δομή ελέγχου στη γλώσσα C, η οποία χρησιμοποιείται για την εκτέλεση ενός μπλοκ κώδικα εάν μια καθορισμένη συνθήκη είναι αληθής. Επιτρέπει τη λήψη αποφάσεων στη ροή ενός προγράμματος.
-
-### Θέμα 1β: Τι γνωρίζετε για την εντολή `switch`;
-
-Η εντολή `switch` είναι μια άλλη δομή ελέγχου στη γλώσσα C, η οποία χρησιμοποιείται για την εκτέλεση ενός από πολλαπλά μπλοκ κώδικα, ανάλογα με την τιμή μιας μεταβλητής. Σε αντίθεση με την `if`, χρησιμοποιείται για την πιο αποδοτική διαχείριση πολλών πιθανών περιπτώσεων, ιδιαίτερα όταν υπάρχουν πολλές δυνατές τιμές για μια μεταβλητή.
-
----
-
-## Θέματα Πηγαίου Κώδικα
-
-### Θέμα 2: Σημειώσεις και Τεκμηρίωση
-
-Αυτή η ενότητα αναφέρεται στα θέματα που εντοπίστηκαν στα παρακάτω αρχεία πηγαίου κώδικα:
-- **`if.c`**: Η τεκμηρίωση εστιάζει στη δομή και ροή των εντολών `if`.
-- **`if1.c`**: Εκτεταμένη ανάλυση των εμφωλευμένων εντολών `if`.
-- **`switch.c`**: Λεπτομέρειες σχετικά με τη χρήση της εντολής `switch` με διαφορετικές περιπτώσεις και συμπεριφοράς "fall-through".
-
----
-
-## Προγράμματα και Τεκμηρίωση
-
-### Θέμα 3: Επίλυση Δευτεροβάθμιων Εξισώσεων (`2ndGradeEquation.c`)
-
-Αυτή η ενότητα παρέχει λεπτομερή τεκμηρίωση και εξήγηση του προγράμματος επίλυσης δευτεροβάθμιων εξισώσεων:
-- **Πρόγραμμα**: Ένα πρόγραμμα στη γλώσσα C που επιλύει δευτεροβάθμιες εξισώσεις της μορφής `ax² + bx + c = 0`.
-- **Τεκμηρίωση**:
-  - **Απαιτήσεις**: Περιγραφή των απαιτήσεων του προγράμματος.
-  - **Δομή**: Πώς είναι οργανωμένο το πρόγραμμα.
-  - **Μεταβλητές**: Ορισμοί και ρόλοι των μεταβλητών που χρησιμοποιούνται.
-  - **Διαδρομή**: Βήμα προς βήμα εξήγηση του αλγορίθμου.
-  - **Παραδείγματα**: Δείγματα εισόδου/εξόδου για να δείξουν τη χρήση του προγράμματος.
-  - **Παρατηρήσεις**: Πρόσθετα σχόλια σχετικά με τη συμπεριφορά του προγράμματος και τις περιπτώσεις ορίων.
-
-### Θέμα 4: Εύρεση Μέγιστου Ακέραιου (`MaxInteger.c`)
-
-Αυτή η ενότητα παρέχει λεπτομερή τεκμηρίωση και εξήγηση του προγράμματος εύρεσης μέγιστου ακέραιου:
-- **Πρόγραμμα**: Ένα πρόγραμμα στη γλώσσα C που διαβάζει μια λίστα ακεραίων και βρίσκει τη μέγιστη τιμή.
-- **Τεκμηρίωση**:
-  - **Απαιτήσεις**: Επεξήγηση του σκοπού του προγράμματος.
-  - **Δομή**: Ανάλυση του τρόπου λειτουργίας του προγράμματος.
-  - **Μεταβλητές**: Επεξήγηση των μεταβλητών που χρησιμοποιούνται στο πρόγραμμα.
-  - **Διαδρομή**: Οδηγός για τη ροή του προγράμματος.
-  - **Παραδείγματα**: Παραδείγματα που δείχνουν την είσοδο και την έξοδο του προγράμματος.
-  - **Παρατηρήσεις**: Πρόσθετες παρατηρήσεις και διευκρινίσεις για ειδικές περιπτώσεις.
-
----
-
-## Απαιτήσεις
-
-- **Μεταγλωττιστής C**: GCC ή οποιοσδήποτε άλλος μεταγλωττιστής C.
-- **Λειτουργικό Σύστημα**: Linux/Windows/MacOS.
-- **Περιβάλλον Ανάπτυξης**: Γραμμή εντολών ή IDE.
-
----
-
-## Εγκατάσταση και Χρήση
-
-### 1. Κλωνοποίηση του Αποθετηρίου
+Windows:
 ```bash
-git clone https://github.com/Computer-Programming-aka-Uniwa/Control
-cd Control
+MathsIntegers.exe
 ```
-### 2. Μεταγλώττιση
 ```bash
-gcc -o if if.c
-gcc -o if1 if1.c
-gcc -o switch switch.c
-gcc -o MathsIntegers MathsIntegers.c
-gcc -o CubeSphere CubeSphere.c
+CubeSphere.exe
 ```
 
-### 3. Εκτέλεση
-```bash
-./if
-./if1
-./switch
-./MathsIntegers
-./CubeSphere
-```
+---
+
+## Open the Documentation
+1. Navigate to the `docs/` directory
+2. Open the report corresponding to your preferred language:
+    - English: `Control-Structures.pdf`
+    - Greek: `Δομές-Ελέγχου.pdf`
