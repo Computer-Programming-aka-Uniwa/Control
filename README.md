@@ -8,6 +8,11 @@
   DEPARTMENT OF COMPUTER ENGINEERING AND INFORMATICS
 </p>
 
+<p align="center">
+  <a href="https://www.uniwa.gr" target="_blank">University of West Attica</a> ·
+  <a href="https://ice.uniwa.gr" target="_blank">Department of Computer Engineering and Informatics</a>
+</p>
+
 ---
 
 <p align="center">
@@ -42,7 +47,6 @@
   <a href="https://ice.uniwa.gr/en/emd_person/nikolaos-vassilas/" target="_blank">UNIWA Profile</a>
 </p>
 
-
 <p align="center">
   Co-supervisor: Georgios Meletiou, Laboratory Teaching Staff<br>
 </p>
@@ -55,58 +59,71 @@
 
 ---
 
-# Project Overview
+<p align="center">
+  Athens, November 2021
+</p>
+
+---
+
+<p align="center">
+  <img src="https://ladderpython.com/wp-content/uploads/2019/11/controlstatement.png" width="250"/>
+</p>
+
+---
+
+# README
+
+## Control Structures
 
 The primary focus of this laboratory work is the **theoretical understanding and practical application of control structures in C**, specifically:
+
 - `if`
 - `if-else`
 - `switch`
 
 These structures are essential for directing program flow based on logical conditions and user input.
 
-
 ---
 
 ## Table of Contents
 
-
-| Section | Folder / File | Description |
-|------:|---------------|-------------|
-| 1 | `assign/` | Assignment material |
-| 1.1 | `assign/project3.png` | Assignment description / problem statement (English) |
-| 1.2 | `assign/εργασία3.png` | Assignment description / problem statement (Greek) |
-| 2 | `docs/` | Theoretical documentation |
-| 2.1 | `docs/Control-Structures.pdf` | Control structures in C (English) |
-| 2.2 | `docs/Δομές-Ελέγχου.pdf` | Control structures in C (Greek) |
-| 3 | `src/` | Source code implementations |
-| 3.1 | `src/if.c` | Basic conditional statement (`if`) |
-| 3.2 | `src/if1.c` | Extended conditional logic |
-| 3.3 | `src/switch.c` | Multi-branch selection (`switch`) |
-| 3.4 | `src/MaxInteger.c` | Maximum value selection using conditionals |
-| 3.5 | `src/2ndGradeEquation.c` | Solving a second-degree equation using control logic |
-| 4 | `README.md` | Repository overview and instructions |
+| Section | Folder / File                 | Description                                          |
+| ------: | ----------------------------- | ---------------------------------------------------- |
+|       1 | `assign/`                     | Assignment material                                  |
+|     1.1 | `assign/project3.png`         | Assignment description / problem statement (English) |
+|     1.2 | `assign/εργασία3.png`         | Assignment description / problem statement (Greek)   |
+|       2 | `docs/`                       | Theoretical documentation                            |
+|     2.1 | `docs/Control-Structures.pdf` | Control structures in C (English)                    |
+|     2.2 | `docs/Δομές-Ελέγχου.pdf`      | Control structures in C (Greek)                      |
+|       3 | `src/`                        | Source code implementations                          |
+|     3.1 | `src/if.c`                    | Basic conditional statement (`if`)                   |
+|     3.2 | `src/if1.c`                   | Extended conditional logic                           |
+|     3.3 | `src/switch.c`                | Multi-branch selection (`switch`)                    |
+|     3.4 | `src/MaxInteger.c`            | Maximum value selection using conditionals           |
+|     3.5 | `src/2ndGradeEquation.c`      | Solving a second-degree equation using control logic |
+|       4 | `README.md`                   | Repository overview and instructions                 |
 
 ---
-
-
-## Contents
 
 ## 1. Theory Fundamentals
 
 The documentation explores the **logic and syntax of conditional execution** in C.
 
-### if and if-else Statements
+### 1.1 if and if-else Statements
+
 - Detailed explanation of how expressions (arithmetic, relational, or logical) are evaluated as:
   - **True** (non-zero)
   - **False** (zero)
 - Demonstrates how evaluation results determine the execution path of a program.
 
-### Nested Conditions
+### 1.2 Nested Conditions
+
 - Examples of placing `if` statements inside other `if-else` structures.
 - Used to handle more complex decision-making scenarios, such as:
   - Determining whether a number is **negative**, **positive**, or **zero**.
 
-### switch Statement
+### 1.3 switch Statement
+
 - Analysis of integer-based decision-making using:
   - `case`
   - `default`
@@ -135,131 +152,42 @@ $$
 ax^2 + bx + c = 0
 $$
 
-
 ---
 
-## Detailed Feature: Quadratic Equation Solver
+## 3. Detailed Feature: Quadratic Equation Solver
 
 The program **`2ndGradeEquation.c`** performs the following technical functions:
 
-### Input Handling
+### 3.1 Input Handling
+
 - Reads three `double` coefficients (`a`, `b`, `c`) from standard input.
 
-### Mathematical Analysis
+### 3.2 Mathematical Analysis
+
 - Calculates the **discriminant**:
-  
+
 $$
 D = b^2 - 4ac
 $$
-
 
 - Determines whether the equation is:
   - **Quadratic** (`a ≠ 0`)
   - **Linear / Degenerate** (`a = 0`)
 
-### Root Calculation
-- **D > 0**  
+### 3.3 Root Calculation
+
+- **D > 0**
   - Calculates **two distinct real roots**.
 
-- **D = 0**  
+- **D = 0**
   - Calculates **one real (double) root**.
 
-- **D < 0**  
+- **D < 0**
   - Identifies the equation as **impossible in the set of real numbers**.
 
-### Output
+### 3.4 Output
+
 - Formats and prints:
   - Input coefficients
   - Calculated roots
 - Uses **high numerical precision** for clarity and correctness.
-
-
-
----
-
-# Installation & Setup Guide
-
-This repository contains **introductory laboratory material** for the  
-**Computer Programming** course at the **University of West Attica (UNIWA)**.
-
----
-
-## Prerequisites
-
-### Required Software
-
-- **C Compiler**
-  - Recommended:
-    - **GCC** (Linux / macOS / Windows via MinGW or WSL)
-
-- **Text Editor or IDE**
-  - Visual Studio Code `(Recommended)`
-  - Code::Blocks
-  - Dev-C++
-  - CLion
-  - Any plain text editor
-
-### Supported Operating Systems
-- Windows
-- Linux `(Recommended)`
-- macOS
-
----
-
-## Installation
-
-### 1. Clone the Repository
-
-Clone the repository to your local machine:
-
-```bash
-git clone https://github.com/Computer-Programming-aka-Uniwa/Control.git
-```
-
-#### Alternative (Without Git)
-
-- Open the repository URL in your browser
-- Click Code → Download ZIP
-- Extract the ZIP file to a local directory
-
-## Compiling & Running the Programs
-### 2. Navigate to Source Directory
-```bash
-cd Control/src
-```
-
-### 3. Compile the Programs
-```bash
-gcc if.c -o if
-gcc if1.c -o if1
-gcc switch.c -o switch
-gcc MaxInteger.c -o MaxInteger
-gcc 2ndGradeEquation.c -o 2ndGradeEquation -lm
-```
-> `-lm` is required to link the math library
-
-### 4. Run the Programs
-Linux / macOS
-```bash
-./if
-./if1
-./switch
-./MaxInteger
-./2ndGradeEquation
-```
-Windows
-```bash
-if.exe
-if1.exe
-switch.exe
-MaxInteger.exe
-2ndGradeEquation.exe
-```
-
----
-
-## Open the Documentation
-1. Navigate to the `docs/` directory
-2. Open the report corresponding to your preferred language:
-    - English: `Control-Structures.pdf`
-    - Greek: `Δομές-Ελέγχου.pdf`
