@@ -101,7 +101,8 @@ These structures are essential for directing program flow based on logical condi
 |     3.3 | `src/switch.c`                | Multi-branch selection (`switch`)                    |
 |     3.4 | `src/MaxInteger.c`            | Maximum value selection using conditionals           |
 |     3.5 | `src/2ndGradeEquation.c`      | Solving a second-degree equation using control logic |
-|       4 | `README.md`                   | Repository overview and instructions                 |
+|       4 | `README.md`                   | Project documentation                                |
+|       5 | `INSTALL.md`                  | Usage instructions                                   |
 
 ---
 
